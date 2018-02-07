@@ -1,2 +1,2 @@
-Czêœæ plików graficznych zosta³ pobrana z internetu.
-Pliki dŸwiêkowe pobrane z internetu.
+Czêœæ plików graficznych zosta³a pobrana z internetu.
+Pliki dŸwiêkowe pobrano z internetu.

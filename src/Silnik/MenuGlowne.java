@@ -103,7 +103,7 @@ public class MenuGlowne {
         eKoniec.skalaY = 1 + 0.1f * (float) Math.cos(lKat + ((2 * Math.PI) / 8) * 4.34);
         eKoniec.posX = 512 - (int) (eKoniec.ruch.getSprite().getWidth() * eKoniec.skalaX) / 2;
         
-        lKat += 0.05;
+        lKat += 0.07;
         if (lKat > 6.28) {
             lKat = 0;
         }

@@ -56,7 +56,7 @@ public class Kula extends Obiekt {
         katX = 0;
         katY = 0;
         //zwolnienieAnimacji = 0;
-        predkosc = 1;
+        predkosc = 2;
         czasDoPrzyspieszenia = 1000 * 10; // szybciej co 10 sek
         tmpCzas = System.currentTimeMillis();
     }
@@ -71,7 +71,7 @@ public class Kula extends Obiekt {
         katX = 0;
         katY = 0;
         //zwolnienieAnimacji = 0;
-        predkosc = 1;
+        predkosc = 1.5;
         czasDoPrzyspieszenia = 1000 * 10; // szybciej co 10 sek
         tmpCzas = System.currentTimeMillis();
         posXd=500; 

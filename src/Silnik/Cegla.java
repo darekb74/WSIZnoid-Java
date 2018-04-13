@@ -123,36 +123,36 @@ public class Cegla extends Obiekt {
                 break;
             case 8:
                 ceglaSpr = MenadzerTekstur.getTekstura("wybuchajaca_a");
-                ruch = new Animacja(this, ceglaSpr, 6);
+                ruch = new Animacja(this, ceglaSpr, 4);
                 ruch.start();
                 break;
             case 9:
                 ceglaSpr = MenadzerTekstur.getTekstura("szara_a");
-                ruch = new Animacja(this, ceglaSpr, 4);
+                ruch = new Animacja(this, ceglaSpr, 3);
                 ruch.setOdtwarzajWPetli(false);
                 ruch.stop();
                 break;
             case 10:
                 ceglaSpr = MenadzerTekstur.getTekstura("zielona_a");
-                ruch = new Animacja(this, ceglaSpr, 4);
+                ruch = new Animacja(this, ceglaSpr, 3);
                 ruch.setOdtwarzajWPetli(false);
                 ruch.stop();
                 break;
             case 11:
                 ceglaSpr = MenadzerTekstur.getTekstura("czerwona_a");
-                ruch = new Animacja(this, ceglaSpr, 4);
+                ruch = new Animacja(this, ceglaSpr, 3);
                 ruch.setOdtwarzajWPetli(false);
                 ruch.stop();
                 break;
             case 12:
                 ceglaSpr = MenadzerTekstur.getTekstura("niebieska_a");
-                ruch = new Animacja(this, ceglaSpr, 4);
+                ruch = new Animacja(this, ceglaSpr, 3);
                 ruch.setOdtwarzajWPetli(false);
                 ruch.stop();
                 break;
             case 13:
                 ceglaSpr = MenadzerTekstur.getTekstura("szklana");
-                ruch = new Animacja(this, ceglaSpr, 4);
+                ruch = new Animacja(this, ceglaSpr, 3);
                 ruch.setOdtwarzajWPetli(false);
                 szklo_zbite = false;
                 ruch.stop();

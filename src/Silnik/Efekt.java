@@ -50,7 +50,7 @@ public class Efekt extends Obiekt {
                 break;
             case 1:
                 efektSpr = MenadzerTekstur.getTekstura("plasma");
-                ruch = new Animacja(this, efektSpr, 6);
+                ruch = new Animacja(this, efektSpr, 4);
                 this.typ = typEfektu;
                 ruch.start();
                 break;
@@ -70,13 +70,13 @@ public class Efekt extends Obiekt {
                 break;
             case 4:
                 efektSpr = MenadzerTekstur.getTekstura("planeta");
-                ruch = new Animacja(this, efektSpr, 6);
+                ruch = new Animacja(this, efektSpr, 4);
                 this.typ = typEfektu;
                 ruch.start();
                 break;
             case 5:
                 efektSpr = MenadzerTekstur.getTekstura("dym");
-                ruch = new Animacja(this, efektSpr, 6);
+                ruch = new Animacja(this, efektSpr, 4);
                 this.typ = typEfektu;
                 // ustawianie losowej klatki początkowej
                 ruch.obecnaKlatka = g.nextInt(ruch.calkowitaIloscKlatek-1);

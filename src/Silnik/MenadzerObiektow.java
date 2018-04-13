@@ -5,7 +5,6 @@
  */
 package Silnik;
 
-import Ramki.RamkaGlowna;
 import static Silnik.Uklad.ceg;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -92,7 +91,8 @@ public class MenadzerObiektow {
         // tworzymy listę kolizji
         ArrayList<Cegla> kL = new ArrayList<>();
         //kL.clear();
-        for (Obiekt obiekt : (ArrayList<Obiekt>) mO.clone()) { 
+        for (int i=0; i < mO.size(); i++) {
+            Obiekt obiekt = mO.get(i);
             if (obiekt.wyswietlany && obiekt.powodujeKolizje && (obiekt instanceof Cegla || obiekt instanceof Platforma)) {
                 if (obiekt instanceof Platforma) {
                     if (kula.sprawdzKolizje(obiekt)) {
@@ -364,7 +364,8 @@ public class MenadzerObiektow {
         Rozne.bgImage.drawBackgroundImage(offG);
         for (int zBuff = 0; zBuff < 3; zBuff++) {
             if (zBuff >= 0 && zBuff <= 2) {
-                for (Obiekt obiekt : (ArrayList<Obiekt>) mO.clone()) {
+                for (int i=0; i < mO.size(); i++) {
+                    Obiekt obiekt = mO.get(i);
                     if (obiekt.zBuff == zBuff && obiekt.wyswietlany) {
                         if (obiekt instanceof Kula && Gra.iswTrakcie()) {
                             ((Kula) obiekt).zmienPozycje();
@@ -404,8 +405,8 @@ public class MenadzerObiektow {
 
     public void update() {
         //if (!Gra.iswTrakcie()) return;
-        for (Obiekt obiekt : (ArrayList<Obiekt>) mO.clone()) {
-            obiekt.ruch.update();
+        for (int i=0; i < mO.size(); i++) {
+            mO.get(i).ruch.update();
         }
     }
 

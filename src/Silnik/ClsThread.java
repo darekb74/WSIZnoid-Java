@@ -14,7 +14,7 @@ import java.awt.Component;
 public class ClsThread implements Runnable {
 
     private Thread watek;
-    private int opoznienie = 10;
+    private int opoznienie = 15;
     private Component komponent;
 
     public ClsThread(Component k) {

@@ -17,7 +17,7 @@ import javafx.scene.media.MediaPlayer.Status;
 public class EfectPlayer implements Runnable {
 
     private Thread watek;
-    private final int opoznienie = 500;
+    private final int opoznienie = 1000;
     public MediaPlayer[] efekty;
     private long sTimers[];
     private URL[] resource = new URL[10];

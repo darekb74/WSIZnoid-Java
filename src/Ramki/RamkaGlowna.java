@@ -246,10 +246,10 @@ public class RamkaGlowna extends javax.swing.JFrame {
     private void sprawdzKlawiature() {
         if (!Gra.isZapauzowana() && Gra.iswTrakcie()) {
             if ((klawisz & 0b1) > 0) {
-                platforma.movX = -5;
+                platforma.movX = -7;
             }
             if ((klawisz & 0b10) > 0) {
-                platforma.movX = 5;
+                platforma.movX = 7;
             }
         }
     }
